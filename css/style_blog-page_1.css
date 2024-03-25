@@ -7,6 +7,9 @@ header{
     padding: 15px;
     border: 1px solid white;
 }
+h2{
+    color: grey;
+}
 /*LINK*/
 a:link {
     color: white;
@@ -31,25 +34,34 @@ h1{
 .container{
     display: flex;
     justify-content: center;
-    align-items: center;
+   /* align-items: center;*/
     width: 100%;
     height: auto;
 }
 .box{
-    display: flex;
+   /* display: flex;*/
     justify-content: center;
+    text-align: center;
     /*align-items: center;*/
-    width: 90%;
-    background-color: cadetblue;
+    width: 85%;
+    /*background-color: cadetblue;*/
+    background-color: white;
     height: 800px;
     border: 1px solid white;
 }
 .box1{
-    width: 10%;
-    background-color: cornflowerblue;
-    height: 800px;
+    position: fixed;
+    width: 225px;
+   /*padding: 25px;*/
+    background-color: grey;
+    /*background-color: cornflowerblue;*/
+    height: auto;
     border: 1px solid white;
     color: white;
+    top: 20px;
+    right: 30px;
+    /*float: right;*/
+    box-sizing: border-box;
     text-align: center;
 }
 .box2{
@@ -58,8 +70,8 @@ h1{
    /*align-items: center;*/
     margin-top: 50px;
    /* margin-left: 50px;*/
-    width: 80%;
-    background-color: darkcyan;
+    width: 15%;
+    background-color: white;
     height: auto;
     border: 1px solid white;
     border-radius: 15px;
@@ -68,8 +80,38 @@ nav{
    text-align: left;
 }
 img {
+    position: static;
     margin-top: 50px;
-    width: 500px;
-    height: 250px;
+    width: 30%;
+    height: auto;
     border-radius: 15px;
+   /* display: block;*/
+}
+
+table{
+    float: center;
+    width: 75%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+th,td{
+    padding: 5px;
+    border: 1px solid black;
+}
+ tr:nth-child(even) { 
+    background-color: rgb(241, 246, 247);
+} 
+ tr:nth-child(odd) {
+    background-color: rgb(182, 179, 179);
+} 
+footer{
+    position: block;
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    border: 1px solid white;
+}
+p{
+    width: 95%;
 }
