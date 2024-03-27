@@ -19,8 +19,15 @@ h2{
 h2.post{
     margin-top: 20px;
 }
+h4{
+    margin: 15px;
+}
 p{
     margin: 15px;
+}
+p.art{
+    text-align: justify ;
+
 }
 /*LINK*/
 a.inf:link{
@@ -53,6 +60,12 @@ h1{
     width: 100%;
     height: auto;
     flex-wrap: wrap;
+}
+.container-alinhador{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
 }
 .container-posts{
     display: flex;
@@ -93,6 +106,15 @@ h1{
     /*color: white;*/
     flex-wrap: wrap;
 }
+.artigo{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+
+}
 nav ul {
     list-style-type: none;
 }
@@ -111,24 +133,39 @@ ul.inform{
     flex-direction: column;
     margin-bottom: 10px;
     font-size: 20px;
+    color: gray;
 }
 li.info{
     margin-bottom: 10px;
     color: gray;
 }
+/*
+ul,li.info{
+    font-size: 15px;
+    display: list-item;
+    list-style-type: none;
+    margin-bottom: 10px;
+}*/
 img {
-    position: static;
     margin: 10px;
     width: 80%;
     height: auto;
 }
+img.artig {
+    margin: 10px;
+    width: 50%;
+    height: auto;
+}
+
 
 table{
+    margin: 10px;
     float: center;
     width: 75%;
     border-collapse: collapse;
     border: 1px solid black;
     text-align: center;
+   /* height: auto;*/
 }
 th,td{
     padding: 5px;
@@ -147,9 +184,6 @@ footer{
     padding: 20px;
     border: 1px solid white;
     text-align: center;
-}
-p{
-    width: 95%;
 }
 @media only screen and (max-width: 768px) {
     .container{
