@@ -28,7 +28,7 @@ h2.titulo-artigo{
     font-size: 35px;
 }
 h4{
-    margin: 15px;
+    margin-top: 15px;
 }
 p{
     margin: 15px;
@@ -110,13 +110,12 @@ a.link1:active {
     text-align: left;
     display: flex;
     flex-direction: column;
-   /* justify-content: center;
-    align-items: center;*/
+    float: left;
 }
 .informes{
     display: flex;
     justify-content: left;
-    margin-top: 50px;
+    margin-top: 20px;
     width: 90%;
     background-color: rgb(218, 218, 219);
     height: auto;
@@ -198,6 +197,23 @@ th,td{
  tr:nth-child(odd) {
     background-color: rgb(182, 179, 179);
 } 
+
+.container-button{
+    
+    width: 100%;
+}
+button{
+    background-color: grey;
+    color: white;
+    border-style: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+   /* width: 10%;*/
+}
+
 footer{
     margin-top: 25px;
     background-color: grey;
@@ -217,25 +233,57 @@ footer{
     .container-informes{
         width: 100%;
     }
+    .informes{
+        width: 100%;
+   }
+   .posts{
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+   }
+   table{
+    font-size: 8px;
+    width: 90%;
+    margin: 0;
+   }
+   img.artig{
+    width: 80%;
+}
     
 }
-/*
+
 @media only screen and (max-width: 480px) {
-    .post-card {
-        padding: 10px;
+    h1{
+        font-size: 25px;
     }
-
-    .post-card img {
-        width: 100%;
-        height: auto;
+    h2{
+        font-size: 13px;
     }
-
-    .search-card input {
-        width: calc(100% - 70px);
+    h2.titulo-artigo{
+        font-size: 13px;
+        width: 90%;
     }
-
-    .author-card img {
-        width: 70px;
-        height: 70px;
+    h4{
+        font-size: 10px;
     }
-}*/
+    nav,p{
+        font-size: 8px;
+    }
+    p{
+        width: 90%;
+    }
+    a.link1{
+        font-size: 10px;
+    }
+    li.info{
+        margin-bottom: 0;
+    }
+    footer{
+        padding: 5px;
+    }
+    button{
+        font-size: 8px;
+        padding: 5px 10px;
+    }
+}
