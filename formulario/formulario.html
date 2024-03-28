@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style-form.css"> 
+</head>
+  <title>Formulário</title>
+  <body>
+
+    <header>
+      <h1>Cadastro de Novo Aluno</h1>
+    </header>
+    <div class="container">
+        <div class="box-form">
+            <h2>Dados Pessoais</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" />
+
+                <label for="idade">Idade:</label>
+                <input type="number" name="quantity" min="0" max="150" step="10" id="idade" />
+            
+                <label for="cpf">CPF:</label>
+                <input type="text"  minlength="11" maxlength="11" id="cpf" />
+            
+                <label for="rg">RG:</label>
+                <input type="text" minlength="9" maxlength="9" id="rg" />
+           
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <h2>Endereço</h2>
+           
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" />
+           
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" />
+            
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" />
+           
+                <label for="cep">CEP:</label>
+                <input type="text" minlength="9" maxlength="9" id="cep" />
+            
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" />
+           
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="acre">AC</option>
+                    <option value="alagoas">AL</option>
+                    <option value="amapa">AP</option>
+                    <option value="amazonas">AM</option>
+                    <option value="bahia">BA</option>
+                    <option value="ceara">CE</option>
+                    <option value="distrito-federal">DF</option>
+                    <option value="espirito-santo">ES</option>
+                    <option value="goias">GO</option>
+                    <option value="maranhao">MA</option>
+                    <option value="mato-grosso">MT</option>
+                    <option value="mato-grosso-do-sul">MS</option>
+                    <option value="minas-gerais">MG</option>
+                    <option value="para">PA</option>
+                    <option value="paraiba">PB</option>
+                    <option value="parana">PR</option>
+                    <option value="pernambuco">PE</option>
+                    <option value="piaui">PI</option>
+                    <option value="rio-de-janeiro">RJ</option>
+                    <option value="rio-grande-do-norte">RN</option>
+                    <option value="rio-grande-do-sul">RS</option>
+                    <option value="rondonia">RO</option>
+                    <option value="roraima">RR</option>
+                    <option value="santa-catarina">SC</option>
+                    <option value="sao-paulo">SP</option>
+                    <option value="sergipe">SE</option>
+                    <option value="tocantins">TO</option>
+                </select>
+           
+                <h2>Dados Sociais</h2>
+                <label for="renda">Renda Média Familiar:</label>
+                <input type="text" id="renda" />
+            
+                <label for="parentes">Quantidade de Parentes em Casa:</label>
+                <input type="number" name="quantity" min="0" max="20" step="2" id="parentes" />
+                      
+                <label for="carro">Possui Carro:</label><br>
+                <input type="checkbox" id="carro"><br>
+                <label for="tv">Possui TV:</label><br>
+                <input type="checkbox" id="tv"><br>
+                <label for="internet">Possui Internet:</label><br>
+                <input type="checkbox" id="internet"><br>
+                <label for="computador">Possui Computador:</label><br>
+                <input type="checkbox" id="computador"><br>
+                <label for="trabalho">Precisa Trabalhar:</label><br>
+                <input type="checkbox" id="trabalho"><br>
+
+                <label for="hobbie">O que faz no tempo livre:</label><br>
+                <textarea id="hobbie" name="hobbie" rows="5"></textarea>
+                <br>
+                <div class="container-form">
+                    <button type="submit">Enviar</button>
+                    <button type="reset"">Limpar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>

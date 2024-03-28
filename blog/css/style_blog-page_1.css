@@ -1,0 +1,337 @@
+/*reset dos atributos padrões*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*formatação de textos*/
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    background-color: grey;
+    color: white;
+    padding: 15px;
+}
+h1{
+    font-size: 45px;
+}
+h2{
+    width: 100%;
+    margin: 15px;
+    color:gray;
+}
+h2.post{
+    margin-top: 20px;
+}
+h2.titulo-artigo{
+    margin-top: 30px;
+    font-size: 35px;
+}
+h4{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+p{
+    margin: 15px;
+}
+p.art{
+    text-align: justify ;
+
+}
+/*LINK's*/
+a:link {
+    color: white;
+    text-decoration:none;
+  }
+a:visited {
+    color: white;
+  }
+  
+a:hover {
+   color: aqua;
+   text-decoration:underline;
+  }
+a:active {
+    color: indigo;
+}
+
+
+a.link1:link {
+    color: black;
+    text-decoration: none;
+  }
+a.link1:visited {
+    color: black;
+  }
+a.link1:hover {
+   color: aqua;
+   text-decoration:underline;
+  }
+a.link1:active {
+    color: rgb(55, 0, 255);
+  }
+
+/*divs/containers*/
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+.container-alinhador{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.container-posts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: auto;
+    flex-wrap:nowrap;
+}
+.container-informes{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    flex-wrap: nowrap;
+}
+.posts{
+    margin: 20px;
+    width: 95%;
+    background-color: rgb(218, 218, 219);
+    height: auto;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    /*box-shadow: 0 0 10px  rgb(202, 202, 207);*/
+}
+.informes{
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    width: 90%;
+    background-color: rgb(218, 218, 219);
+    height: auto;
+    float:left;
+    flex-wrap: wrap;
+    text-align: left;
+    /*box-shadow: 0 0 10px  rgb(202, 202, 207);*/
+}
+.artigo{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+
+}
+/*listas*/
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+ul.inform{
+    list-style-type: none; 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+li.info{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+/*imagens*/
+img {
+    margin: 10px;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+img.artig {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 50%;
+}
+img.autor{
+    margin-left: 20px;
+    width: 20%;
+    border-radius: 50%;
+}
+img.autor{
+    margin-left: 20px;
+    width: 20%;
+    border-radius: 50%;
+}
+/*tabela*/
+table{
+    margin: 10px;
+    float: center;
+    width: 75%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+th,td{
+    padding: 5px;
+    border: 1px solid black;
+}
+ tr:nth-child(even) { 
+    background-color: rgb(241, 246, 247);
+} 
+ tr:nth-child(odd) {
+    background-color: rgb(182, 179, 179);
+} 
+/*formulários e botôes*/
+.box-form{
+    text-align: left;
+    width: 80%;
+    height: auto;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px  rgb(202, 202, 207);
+}
+input{
+    width: 90%;
+    margin-left: 5%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+label{
+    width: 90%;
+    font-weight: bold;
+    margin-left: 5%;
+}
+.container-button{    
+    width: 100%;
+}
+button{
+    background-color: grey;
+    color: white;
+    border-style: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+}
+button.norm{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+button.formulario{
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/*rodapé*/
+footer{
+    margin-top: 25px;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+/*compatibilidade*/
+@media only screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+    .container-posts {
+        width: 100%;
+    }
+    
+    .container-informes{
+        width: 100%;
+    }
+    .informes{
+        width: 100%;
+   }
+   .posts{
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+   }
+   table{
+    font-size: 8px;
+    width: 90%;
+    margin: 0;
+   }
+   img.artig{
+    width: 80%;
+}
+    
+}
+
+@media only screen and (max-width: 480px) {
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 13px;
+    }
+    h2.titulo-artigo{
+        font-size: 13px;
+        width: 90%;
+    }
+    h4{
+        font-size: 10px;
+    }
+    nav,p{
+        font-size: 8px;
+    }
+    p{
+        width: 90%;
+    }
+    a.link1{
+        font-size: 10px;
+    }
+    li.info{
+        margin-bottom: 0;
+    }
+    footer{
+        padding: 5px;
+    }
+    button{
+        font-size: 8px;
+        padding: 5px 10px;
+    }
+}
